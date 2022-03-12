@@ -61,7 +61,7 @@ export default function Login()
             {
                 errors.map((error, i) =>
                 {
-                    return <Notification closable={ true } key={ i } type="error">{ error }</Notification>;
+                    return <Notification closable={ false } key={ i } type="error">{ error }</Notification>;
                 })
             }
         </div>
