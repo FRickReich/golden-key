@@ -1,7 +1,7 @@
 {
-  "name": "color-set",
-  "version": "1.0.0",
-  "description": "An application to save colors in collections and an API to recieve them",
+  "name": "golden-key",
+  "version": "0.1.0",
+  "description": "A bootstrap project for mern stack applications",
   "scripts": {
     "lint": "eslint src/**",
     "build:server": "tsc ./src/server/**.* --outDir ./build/server --esModuleInterop && tsc ./src/server/**/**.* --outDir ./build/server --esModuleInterop",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FRickReich/color-set.git"
+    "url": "git+https://github.com/FRickReich/golden-key.git"
   },
   "keywords": [],
   "author": "F. Rick Reich",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FRickReich/color-set/issues"
+    "url": "https://github.com/FRickReich/golden-key/issues"
   },
-  "homepage": "https://github.com/FRickReich/color-set#readme",
+  "homepage": "https://github.com/FRickReich/golden-key#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
     "@types/cookie-parser": "^1.4.2",
