@@ -1,0 +1,42 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "root": true,
+    "env": {
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"],
+        "no-var": ["error" ],
+        "no-use-before-define": [ "error" ],
+        "no-unused-vars": [ "warn" ],
+        "array-bracket-newline": [ "error", { "multiline": true } ],
+        "computed-property-spacing": ["error", "always"],
+        "object-curly-spacing": ["error", "always"],
+        "array-bracket-spacing": ["error", "always"],
+        "object-curly-newline": ["error", { "multiline": true, "minProperties": 4 }],
+        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+        "eol-last": ["error", "always"],
+        "multiline-ternary": ["error", "always-multiline"],
+        "lines-between-class-members": ["error", "always"],
+        "lines-around-comment": ["error", { "beforeBlockComment": true }],
+        "dot-location": ["error", "property"],
+        "no-empty-function": "error",
+        "arrow-spacing": "error",
+        "brace-style": ["error", "allman", { "allowSingleLine": true }],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "indent": ["error", 4],
+        "spaced-comment": ["error", "always"]
+    }
+}

@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*
+{
+    font-family: 'Lato', sans-serif;
+}
+
+#layout
+{
+    padding: 0 1em;
+}
+
+input[type=text],
+input[type=password]
+{
+    width: 100%;
+    padding: 1em 1em;
+    margin: 0 0 8px;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    opacity: 0.5;
+
+    &:focus
+    {
+        opacity: 1.0;
+    }
+}
+
+button {
+    width: 100%;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    background: rgba(4, 170, 109, 0.85);
+    color: white;
+
+    &:hover
+    {
+        background: rgba(4, 170, 109, 1);
+    }
+  }
+  

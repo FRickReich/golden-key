@@ -1,0 +1,48 @@
+.Notification
+{
+    max-width: 100%;
+    margin: 0.5em 0;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    border: 0.1em solid transparent;
+    position: relative;
+
+    &.warning
+    {
+        border-color: rgba(255, 196, 0, 1);
+        background-color: rgba(255, 196, 0, 0.1);
+        color: rgba(255, 196, 0, 1);
+    }
+    &.success
+    {
+        border-color: rgba(199, 210, 60, 1);
+        background-color: rgba(199, 210, 60, 0.1);
+        color: rgba(199, 210, 60, 1);
+    }
+    &.error
+    {
+        border-color: rgba(199, 0, 57, 1);
+        background-color: rgba(199, 0, 57, 0.1);
+        color: rgba(199, 0, 57, 1);
+    }
+    &.info
+    {
+        border-color: rgba(159, 195, 233, 1);
+        background-color: rgba(159, 195, 233, 0.1);
+        color: rgba(159, 195, 233, 1);
+    }
+
+    .close
+    {
+        position: absolute;
+        top: 0.25em;
+        right: 0.25em;
+        opacity: 0.75;
+
+        &:hover
+        {
+            opacity: 1.0;
+            cursor: pointer;
+        }
+    }
+}
