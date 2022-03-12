@@ -2,7 +2,6 @@ import 'dotenv/config';
 import { Request, Response } from 'express';
 import { validationResult } from 'express-validator';
 import logger from '../../utils/logger';
-import jwt from 'jsonwebtoken';
 
 import { accessToken } from './../../utils';
 import User from '../../models/User';

@@ -21,7 +21,7 @@ export default function Dashboard()
 
         }).catch((error: AxiosError) =>
         {
-            if (error.response!.status === 403)
+            if (error.response?.status === 403)
             {
                 navigate('/login');
             }
