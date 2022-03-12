@@ -10,7 +10,7 @@ import routes from './routes';
 
 const app : Application = express();
 const port : number = Number(process.env.PORT) || 3000;
-const databaseUrl : string = process.env.DB_URL || 'mongodb://localhost:27017/colorset-develop';
+const databaseUrl : string = process.env.DB_URL || 'mongodb://localhost:27017/golden-key-develop';
 
 mongoose.connect(databaseUrl);
 const db : mongoose.Connection = mongoose.connection;
