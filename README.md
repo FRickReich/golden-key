@@ -2,7 +2,7 @@
 
 Der Goldene Schlüssel ist eine Produktionsrelevante MERN stack applikation auf TypeScript basis, die verwendet werden kann um einen startpunkt für eine komplette MERN applikation zu entwickeln. Sie verfügt über ein Frontend in REACT, ein backend mit EXPESS, geschrieben in TypeScript und eine MongoDB anbindung, außerdem beinhaltet sie eine beispieldatei für den react context hook und einige weitere interessante features die es zu erforschen gilt.
 
-## Tipps
+## Ein paar Worte über produktionsrelevante Repositories
 
 Eine professionelle, produktionsrelevante Applikation hat im normalfall mehrere branches, die für verschiedene versionen der applikation genutzt werden.
 
@@ -11,6 +11,18 @@ das branch main oder master wird ausschließlich für fertige versionen, genutzt
 Um allerdings an dingen zu arbeiten, wie features, oder neue branches zu erstellen um bugs zu fixen oder änderungen vorzuschlagen, gibt es im normalfall das branch "develop", dieses branch sollte sehr früh erstellt werden und in den repository settings als hauptbranch eingestellt werden, so werden alle änderungen erst hier hin gemerged, bevor sie manuell zu main hinzugefügt werden können. Eine gute idee ist es dann auch als branching rule zu verbieten, auf main ohne PR zu comitten.
 
 Bei heroku könnt ihr die produktive und die develop version zeitgleich laufen lassen, dafür erstellt ihr einfach 2 projekte, und setzt die automatischen updates aus einem branch bei der einen version, die ihr zum beispiel "meinprojekt-develop" nennt auf "develop", und bei dem anderen, was eure produktionsversion namens "meinprojekt" ist, auf main. jetzt schreibt ihr euren code, macht änderungen und pusht sie immer zu develop, wodurch ihr eure änderungen dann auf meinprojekt-develop direkt testen könnt, sollte alles funktionieren (NICHT NUR AUF LOCALHOST SONDERN AUCH AUF DER DEVELOP ADRESSE) könnt ihr euren code von develop nach main mergen, und sehr dann die änderungen auf der produktiv version.
+
+Im normalfall gibt es nur eine person die am ende eines features entscheidet, ob von develop auf main gemerged wird, den sogenannten code owner, oder oftmals auch der manager des projektes.
+
+damit code auf main gepusht werden darf müssen folgende regeln erfüllt worden sein:
+
+- Alle frontend und backend tests wurden erfolgreich durchgeführt
+- Die code-coverage liegt bei 100%
+- Kommentare wurden aus dem code gelöscht
+- console.log(); befehle sind aus dem code entfernt worden
+- temporäre dateien, überschüssige node module und nicht mehr benötigte einträge in der package.json sind gelöscht
+- die code-convention des projektes wurde eingehalten
+- der manager wurde informiert, das ein pull request erwünscht wird
 
 ## Scripts
 
