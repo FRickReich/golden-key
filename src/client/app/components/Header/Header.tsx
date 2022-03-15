@@ -42,7 +42,7 @@ export default function Header()
                 user.loggedIn &&
                 <>
                     <li className="right">
-                        <a href="/logout" onClick={ (e) => handleLogout(e) }>Logout</a>
+                        <a id="logoutButton" href="/logout" onClick={ (e) => handleLogout(e) }>Logout</a>
                     </li>
                     <li className="right">
                         <NavLink to="/dashboard">{ user.username }</NavLink>

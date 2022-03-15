@@ -4,9 +4,10 @@ import './Notification.scss';
 
 interface INotification
 {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     type: string;
     closable?: boolean;
+    key?: number;
 }
 
 export = (props : INotification) =>

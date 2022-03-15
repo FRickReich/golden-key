@@ -66,7 +66,7 @@ export default function Register()
                 onChange={ (e) => setPasswordConfirmation(e.target.value) }
             />
             <br />
-            <button id="loginButton" onClick={ () => handleRegistration() }>Register</button>
+            <button id="loginButton" className={errors.length > 0 && 'err' } onClick={ () => handleRegistration() }>Register</button>
 
             {
                 errors.map((error, i) =>
