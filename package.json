@@ -10,8 +10,7 @@
     "start:client": "parcel watch --dist-dir ./build/client ./src/client/index.html --public-url ./static/",
     "build": "npm run build:server && npm run build:client",
     "start:dev": "npm run lint && concurrently \"npm run start:server\" \"npm run start:client\"",
-    "start": "node ./build/server/index.js",
-    "deploy": "vercel deploy --prod"
+    "start": "node ./build/server/index.js"
   },
   "repository": {
     "type": "git",
