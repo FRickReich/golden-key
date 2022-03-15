@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 
 const authorize = (req : Request, res: Response, next: NextFunction) =>
 {
-    const secret = process.env.SECRET_TOKEN || 'default';
+    const secret = String(process.env.SECRET_TOKEN);
 
     const token = req.cookies.access_token;
 

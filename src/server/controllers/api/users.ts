@@ -4,7 +4,7 @@ import { validationResult } from 'express-validator';
 import logger from '../../utils/logger';
 
 import { accessToken } from './../../utils';
-import User from '../../models/User';
+import { User } from '../../models/';
 
 const signup = (req : Request, res : Response) =>
 {
@@ -87,21 +87,11 @@ const authorize = (req: Request, res: Response) =>
 {
     User.findOne({ username: res.locals.user.username }).then(foundUser =>
     {
-        if(foundUser)
-        {
-            res.status(200).json({
-                sucess: true,
-                user: foundUser,
-                message: 'user authenticated'
-            });
-        }
-        else
-        {
-            res.status(200).json({
-                success: false,
-                errors: 'Authorization failed'
-            });
-        }
+        res.status(200).json({
+            success: true,
+            user: foundUser,
+            message: 'user authenticated'
+        });
     });
 };
 
@@ -111,7 +101,7 @@ const logout = (req: Request, res: Response) =>
         .clearCookie('access_token')
         .status(200)
         .json({
-            sucess: true,
+            success: true,
             message: 'User logged out'
         });
 };

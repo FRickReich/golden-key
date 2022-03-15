@@ -8,7 +8,7 @@ interface IUserData
 
 const sign = (data : IUserData) =>
 {
-    const secret = process.env.SECRET_TOKEN || 'default';
+    const secret = String(process.env.SECRET_TOKEN);
 
     return jwt.sign(data, secret, { expiresIn: '1800s' });
 };
