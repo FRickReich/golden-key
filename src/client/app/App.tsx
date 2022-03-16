@@ -17,7 +17,7 @@ import {
     Dashboard
 } from './pages';
 
-export default function App()
+export = () => 
 {
     const [ user, setUser ] = useState({ data: {}, loggedIn: false });
 

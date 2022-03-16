@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import Notification from '../components/Notification/Notification';
 
-export default function Login()
+export = () =>
 {
     const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ export default function Login()
     const [ password, setPassword ] = useState('');
     const [ errors, setErrors ] = useState([]);
 
-    const handleLogin = () =>
+    const handleLogin = () : void =>
     {
         axios({
             method: 'post',

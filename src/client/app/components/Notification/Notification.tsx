@@ -14,12 +14,12 @@ export = (props : INotification) =>
 {
     const [ isClosed, setIsClosed ] = useState(false);
 
-    const handleClose = () =>
+    const handleClose = () : void =>
     {
         setIsClosed(true);
     };
 
-    const notificationType = (type : string) =>
+    const notificationType = (type : string) : string =>
     {
         switch(type)
         {

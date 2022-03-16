@@ -7,13 +7,13 @@ import { UserDataContext } from '../../UserDataProvider';
 
 import './Header.scss';
 
-export default function Header()
+export = () =>
 {
     const { user, setUser } = useContext(UserDataContext);
     
     const navigate = useNavigate();
 
-    const handleLogout = async (e) =>
+    const handleLogout = async (e) : Promise<void> =>
     {
         e.preventDefault();
 

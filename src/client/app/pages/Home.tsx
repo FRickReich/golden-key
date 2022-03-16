@@ -1,5 +1,5 @@
 
-export default function Home()
+export = () =>
 {
     return (
         <div id="Home">

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import Notification from '../components/Notification/Notification';
 
-export default function Register()
+export = () =>
 {
     const navigate = useNavigate();
 
@@ -13,7 +13,7 @@ export default function Register()
     const [ passwordConfirmation, setPasswordConfirmation ] = useState('');
     const [ errors, setErrors ] = useState([]);
 
-    const handleRegistration = () =>
+    const handleRegistration = () : void =>
     {
         axios({
             method: 'post',
