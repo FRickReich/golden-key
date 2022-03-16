@@ -1,0 +1,26 @@
+{
+  "cache": false,
+  "all": true,
+  "reporter": [
+    "html",
+    "text"
+  ],
+  "extension": [
+    ".ts",
+    ".tsx"
+  ],
+  "include": [
+    "src/**/*.**"
+  ],
+  "exclude": [
+    "test/*.spec.*",
+    "src/client/index.tsx"
+  ],
+  "require": [
+    "ts-node/register"
+  ],
+  "extends": "nyc-config-tsx",
+  "sourceMap": true,
+  "instrument": true,
+  "check-coverage": false
+}

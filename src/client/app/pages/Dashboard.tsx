@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios, { AxiosError } from 'axios';
 import { UserDataContext } from '../UserDataProvider';
 
-export default function Dashboard()
+export = () =>
 {
     const { user, setUser } = useContext(UserDataContext);
     
